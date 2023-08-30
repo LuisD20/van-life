@@ -10,7 +10,7 @@ import Home from "./pages/Vans/Home";
 import About from "./pages/Vans/About";
 import Vans, { loader as vansLoader } from "./pages/Vans/Vans";
 import VanDetail, { loader as vanDetailLoader } from "./pages/Vans/VanDetail";
-import "./server";
+
 import Layout from "./components/Layout";
 import Income from "./pages/Host/Income";
 
