@@ -1,4 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
+import imageUrl from "/assets/images/avatar-icon.png";
 
 const style = {
   fontWeight: "bold",
@@ -13,17 +14,17 @@ function Header() {
         #VanLife
       </Link>
       <nav>
-        <NavLink to="/host" style={({ isActive }) => (isActive ? style : null)}>
+        <NavLink to="host" style={({ isActive }) => (isActive ? style : null)}>
           Host
         </NavLink>
-        <NavLink
-          to="/about"
-          style={({ isActive }) => (isActive ? style : null)}
-        >
+        <NavLink to="about" style={({ isActive }) => (isActive ? style : null)}>
           About
         </NavLink>
-        <NavLink to="/vans" style={({ isActive }) => (isActive ? style : null)}>
+        <NavLink to="vans" style={({ isActive }) => (isActive ? style : null)}>
           Vans
+        </NavLink>
+        <NavLink to="login" style={({ isActive }) => (isActive ? style : null)}>
+          <img className="login-icon" src={imageUrl} />
         </NavLink>
       </nav>
     </header>
